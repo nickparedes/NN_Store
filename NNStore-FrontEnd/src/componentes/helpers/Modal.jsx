@@ -16,7 +16,7 @@ const styles = {
     window : {
         position: "relative",
         borderRadius: 5,
-        zIndex: 10,
+        zIndex: 999,
         minWidth: 320,
     },
     closeBtn:{

@@ -8,7 +8,7 @@ const img = require.context("./assets/navbar",true);
 
 export default function Navbar(){
     
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(true);
 
     const toggle= ()=>{
         setActive(!active);
@@ -76,7 +76,7 @@ export default function Navbar(){
 
 
             <Modal active={active} toggle={toggle}>
-               <Login/>
+            <Login/>
             </Modal>
       </nav>
     );

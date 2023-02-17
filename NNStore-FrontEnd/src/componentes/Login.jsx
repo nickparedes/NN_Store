@@ -2,6 +2,31 @@ import React, { useState } from 'react'
 import "./assets/login.css"
 
 
+
+const SocialContainer = ()=>{
+    return(
+        <div class="social-container">
+            <a href="#" class="social"><i class="uil uil-facebook"></i></a>
+            <a href="#" class="social"><i class="uil uil-google"></i></a>
+            <a href="#" class="social"><i class="uil uil-linkedin"></i></a>
+        </div>
+    );
+}
+
+const Panel = () =>{
+
+    const {h1, p , button} = this.props
+    return(
+        <div class="overlay-panel overlay-left">
+            <h1>{h1}</h1>
+            <p>{p}</p>
+            <button class="ghost" id="signIn">{button}</button>
+        </div>
+    );
+}
+
+
+
 export default function Login () {
     
 /*     const signUpButton = document.getElementById('signUp');
@@ -16,44 +41,38 @@ export default function Login () {
         container.classList.remove("right-panel-active");
     }); */
 
-    const container = document.getElementById('container');
+/*     const container = document.getElementById('container');
+*/
     const [flag, setFlag] = useState(false)
 
-    if(flag){
+/*     if(flag){
         container.classList.add("right-panel-active");
     }else{
         container.classList.remove("right-panel-active");
     }
-
+ */
     const handleChange = ()=>{
         setFlag(!flag)
-    }
+    } 
+
 
     return (
         <div class="container " id="container" >
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>Create Account</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="uil uil-facebook"></i></a>
-                    <a href="#" class="social"><i class="uil uil-google"></i></a>
-                    <a href="#" class="social"><i class="uil uil-linkedin"></i></a>
-                </div>
-                <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button onClick={handleChange}>Sign Up</button>
-            </form>
-        </div>
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <SocialContainer/>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button onClick={handleChange}>Sign Up</button>
+                </form>
+            </div>
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Sign in</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="uil uil-facebook"></i></a>
-                    <a href="#" class="social"><i class="uil uil-google"></i></a>
-                    <a href="#" class="social"><i class="uil uil-linkedin"></i></a>
-                </div>
+                <SocialContainer/>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
@@ -68,7 +87,8 @@ export default function Login () {
                     <p>To keep connected with us please login with your personal info</p>
                     <button class="ghost" id="signIn">Sign In</button>
                 </div>
-                <div class="overlay-panel overlay-right">
+
+                    <div class="overlay-panel overlay-right">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
