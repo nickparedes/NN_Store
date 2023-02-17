@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './componentes/Navbar';
 import Home from './pages/Home';
-
+import Login from './componentes/Login';
 
 function App() {
 
