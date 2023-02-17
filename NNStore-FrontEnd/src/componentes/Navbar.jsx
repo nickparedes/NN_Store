@@ -1,17 +1,27 @@
 import React, {useState, useEffect} from "react"
 import "./assets/navbar/navbar.css"
+import Modal from "./helpers/Modal.jsx";
+import Login from "./Login";
 
 const img = require.context("./assets/navbar",true);
 
 
 export default function Navbar(){
+    
+    const [active, setActive] = useState(false);
 
-    const [login , setLogin] = useState(false)
+    const toggle= ()=>{
+        setActive(!active);
+    }
+
+    const [hamburguer, setHamburguer] = useState(false);
+    const [search, setSearch] = useState("");
+
 
 
     return(
         <nav class="navbar">
-            <button class="burger material-symbols-outlined">menu</button>
+            <button class="burger material-symbols-outlined" onClick={(e) =>setHamburguer(!hamburguer)} >menu</button>
 
             <div class="logo">
                 <svg width="52" height="20" viewBox="0 0 52 20"  >
@@ -28,7 +38,10 @@ export default function Navbar(){
                     type="text"
                     class="search"
                     id="search"
-                    placeholder="Search"
+                    name="search"
+                    value={search}
+                    onChange = {(e) =>setSearch(e.target.value)}
+                    placeholder="what do you want to buy?"
                     />
                     <button class="material-symbols-outlined">search</button>
                 </div>
@@ -41,25 +54,30 @@ export default function Navbar(){
                 <button class="material-symbols-outlined">
                     <span class="badge"></span>location_on
                 </button>
-                <div className="last-bottom">
+                <div className="last-bottom" onClick={toggle}>
                     
-
+ {/* 
                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" >
                         <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                         <g id="SVGRepo_iconCarrier"> <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M15 12L3 12M15 12L11 16M15 12L11 8" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
                     </svg> 
                      <span>Login</span> 
-
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+ */}
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                         <g id="SVGRepo_iconCarrier"> <path d="M14 4L17.5 4C20.5577 4 20.5 8 20.5 12C20.5 16 20.5577 20 17.5 20H14M3 12L15 12M3 12L7 8M3 12L7 16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
                         </svg>
-                    <img src={img("./prueba.png")} alt="" /> */}
+                    <img src={img("./prueba.png")} alt="" />
                 </div>
 
             </nav>
+
+
+            <Modal active={active} toggle={toggle}>
+               <Login/>
+            </Modal>
       </nav>
     );
 }

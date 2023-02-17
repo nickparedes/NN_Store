@@ -37,19 +37,17 @@
 
 * {
   box-sizing: border-box;
+  font-family: var(--font)
 }
 
-body {
-  background: var(--found-color);
-  font-family: Roboto;
-}
+
 
 button {
   position: relative;
   display: grid;
   place-items: center;
   width: 40px;
-  height: 72px;
+
   border: 0;
   padding: 0;
   font-family: inherit;
@@ -71,8 +69,8 @@ button {
   font-size: 8px;
   font-weight: 500;
   font-family: Roboto;
-} */
-
+} 
+ */
 .burger {
   width: 72px;
 }
@@ -87,7 +85,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: var(--found-color);
+  background: #0f0f0f;
 }
 
 .logo {
@@ -119,12 +117,12 @@ button {
   width: auto;
   gap: 10px;
   margin: 0 auto;
-  color: var(--cursor);
+  color: #888989;
 }
 
 .center button {
   display: none;
-  background: var(--found-color);
+  background: #1e1e1e;
   height: 40px;
   border-radius: 50%;
   font-size: 20px;
@@ -159,7 +157,7 @@ button {
   border-radius: 0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: var(--found-color);
+  background: #222222;
 }
 
 .search input {
@@ -171,7 +169,7 @@ button {
   font-size: 16px;
   border: 1px solid #303030;
   border-radius: 22px;
-  background: var(--found-color);
+  background: #121212;
   color: inherit;
   font-family: inherit;
   font-weight: 400;
