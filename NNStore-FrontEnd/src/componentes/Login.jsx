@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import "./assets/login.css"
-
+import React, { useState,useEffect } from 'react'
+import "./assets/login.css";
+import moduleStyles from "./assets/login.css"
 
 
 const SocialContainer = ()=>{
@@ -41,21 +41,20 @@ export default function Login () {
         container.classList.remove("right-panel-active");
     }); */
 
-/*     const container = document.getElementById('container');
-*/
-    const [flag, setFlag] = useState(false)
-
-/*     if(flag){
-        container.classList.add("right-panel-active");
-    }else{
-        container.classList.remove("right-panel-active");
-    }
- */
-    const handleChange = ()=>{
-        setFlag(!flag)
-    } 
-
-
+    useEffect(() => {
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+        
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        }); 
+    }, [])
+    
     return (
         <div class="container " id="container" >
             <div class="form-container sign-up-container">
@@ -66,7 +65,7 @@ export default function Login () {
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <button onClick={handleChange}>Sign Up</button>
+                    <button >Sign Up</button>
                 </form>
             </div>
         <div class="form-container sign-in-container">
@@ -77,7 +76,7 @@ export default function Login () {
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button onClick={handleChange}>Sign In</button>
+                <button >Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
