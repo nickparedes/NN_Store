@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.NNStore-backend.NNStore-backend' is invalid and this project uses 'com.NNStorebackend.NNStorebackend' instead.
+* The original package name 'com.NN.NNStore-backend' is invalid and this project uses 'com.NN.NNStorebackend' instead.
 
 # Getting Started
 
@@ -21,4 +21,5 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 
