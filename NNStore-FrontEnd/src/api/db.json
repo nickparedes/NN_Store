@@ -1,0 +1,35 @@
+{
+    "productos":[
+        {"id":1 , "name":"producto 1", "price": "precio 1", "descuento": "0.1", "stock": "5" , "img": "url1" , "categoria":"tecnologia"},
+        {"id":2 , "name":"producto 2", "price": "precio 2", "descuento": "0.2", "stock": "2" , "img": "url2" , "categoria":"Moda"},
+        {"id":3 , "name":"producto 3", "price": "precio 3", "descuento": "0.3", "stock": "3" , "img": "url3" , "categoria": "Accesorios"},
+        {"id":4 , "name":"producto 4", "price": "precio 4", "descuento": "0.4", "stock": "4" , "img": "url4" , "categoria": "Hogar"},
+        {"id":5 , "name":"producto 5", "price": "precio 5", "descuento": "0.5", "stock": "5" , "img": "url5" , "categoria":"tecnologia" },
+        {"id":6 , "name":"producto 6", "price": "precio 6", "descuento": "0.6", "stock": "6" , "img": "url6" , "categoria":"Moda"},
+        {"id":7 , "name":"producto 7", "price": "precio 7", "descuento": "0.7", "stock": "7" , "img": "url7" , "categoria": "Accesorios"},
+        {"id":8 , "name":"producto 8", "price": "precio 8", "descuento": "0.8", "stock": "8" , "img": "url8" , "categoria":"Moda"},
+        {"id":9 , "name":"producto 9", "price": "precio 9", "descuento": "0.9", "stock": "9" , "img": "url9", "categoria": "Hogar"},
+        {"id":10 , "name":"producto 10", "price": "precio 10", "descuento": "0.10", "stock": "10" , "img": "ur10" , "categoria": "Hogar"},
+        {"id":11 , "name":"producto 11", "price": "precio 11", "descuento": "0.11", "stock": "11" , "img": "ur11", "categoria": "Accesorios" },
+        {"id":12 , "name":"producto 12", "price": "precio 12", "descuento": "0.12", "stock": "12" , "img": "ur12", "categoria":"Moda" },
+        {"id":13 , "name":"producto 13", "price": "precio 13", "descuento": "0.13", "stock": "13" , "img": "ur13" , "categoria": "Accesorios"},
+        {"id":14 , "name":"producto 14", "price": "precio 14", "descuento": "0.14", "stock": "14" , "img": "ur14", "categoria":"Moda" },
+        {"id":15 , "name":"producto 15", "price": "precio 15", "descuento": "0.15", "stock": "15" , "img": "ur15", "categoria":"tecnologia" },
+        {"id":16 , "name":"producto 16", "price": "precio 16", "descuento": "0.16", "stock": "16" , "img": "ur16", "categoria":"Moda" },
+        {"id":17 , "name":"producto 17", "price": "precio 17", "descuento": "0.17", "stock": "17" , "img": "ur17", "categoria":"Moda" },
+        {"id":18 , "name":"producto 18", "price": "precio 18", "descuento": "0.18", "stock": "18" , "img": "ur18", "categoria": "Hogar"},
+        {"id":19 , "name":"producto 19", "price": "precio 19", "descuento": "0.19", "stock": "19" , "img": "ur19", "categoria": "Accesorios"},
+        {"id":20 , "name":"producto 20", "price": "precio 20", "descuento": "0.20", "stock": "20" , "img": "ur20", "categoria": "Hogar"},
+        {"id":21 , "name":"producto 21", "price": "precio 21", "descuento": "0.21", "stock": "21" , "img": "ur21", "categoria": "Accesorios" },
+        {"id":22 , "name":"producto 22", "price": "precio 22", "descuento": "0.22", "stock": "22" , "img": "ur22", "categoria":"Moda" },
+        {"id":23 , "name":"producto 23", "price": "precio 23", "descuento": "0.23", "stock": "23" , "img": "ur23" , "categoria":"Moda"},
+        {"id":24 , "name":"producto 24", "price": "precio 24", "descuento": "0.24", "stock": "24" , "img": "ur24", "categoria":"tecnologia" },
+        {"id":25 , "name":"producto 25", "price": "precio 25", "descuento": "0.25", "stock": "25" , "img": "ur25", "categoria":"Moda"},
+        {"id":26 , "name":"producto 26", "price": "precio 26", "descuento": "0.26", "stock": "26" , "img": "ur26", "categoria": "Accesorios" },
+        {"id":27 , "name":"producto 27", "price": "precio 27", "descuento": "0.27", "stock": "27" , "img": "ur27", "categoria":"Moda" },
+        {"id":28 , "name":"producto 28", "price": "precio 28", "descuento": "0.28", "stock": "28" , "img": "ur28" , "categoria": "Accesorios"},
+        {"id":29 , "name":"producto 29", "price": "precio 29", "descuento": "0.29", "stock": "29" , "img": "ur29" , "categoria": "Hogar"},
+        {"id":30 , "name":"producto 30", "price": "precio 30", "descuento": "0.30", "stock": "30" , "img": "ur30", "categoria":"Moda" }
+
+    ]
+}
